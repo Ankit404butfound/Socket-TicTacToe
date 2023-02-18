@@ -1,0 +1,42 @@
+body {
+    background: #3A1C71;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(90deg, #FFAF7B, #D76D77, #3A1C71);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, #FFAF7B, #D76D77, #3A1C71);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #FDFDFE;
+    font-size: 40px;
+    font-family: 'Source Code Pro'
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+}   
+
+
+td{
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    background-color: #ffffff49;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    td {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+td:hover{
+    background-color: #ffffff6a;
+}
