@@ -17,7 +17,23 @@ body {
     transform: translate(-50%, -50%);
     position: absolute;
 
-}   
+} 
+
+
+.buttons {
+    width: 20px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .gameArea{
+    display: none;
+} */
+
+
 
 
 td{
@@ -27,7 +43,60 @@ td{
     background-color: #ffffff49;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
+
+.newUser{
+    background-color: #2f0b71;
+}
+
+.newUser button{
+    width: 150px;
+    height: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.newUser button:hover{
+    cursor: pointer;
+}
+
+
+#msg, #btnReplay{
+    text-align: center;
+    font-size: 30px;
+}
+
+#btnReplay{
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in Internet Explorer 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btnReplay button{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -39,4 +108,7 @@ td{
 
 td:hover{
     background-color: #ffffff6a;
+}
+td:active{
+    background-color: #ffffff69;
 }

@@ -3,7 +3,7 @@
 
 <head>
     <title>TicTacToeIO</title>
-    <meta name="viewport" content="width=500, initial-scale=1" />
+    <meta name="viewport" content="width=500" />
     <link rel="stylesheet" href="static/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.min.js"></script>
 </head>
@@ -11,24 +11,33 @@
 <body>
     <div class="container">
         <h1>TicTacToeIO</h1>
-        <table align="center">
-            <tr>
-                <td id="1"></td>
-                <td id="2"></td>
-                <td id="3"></td>
-            </tr>
-            <tr>
-                <td id="4"></td>
-                <td id="5"></td>
-                <td id="6"></td>
-            </tr>
-            <tr>
-                <td id="7"></td>
-                <td id="8"></td>
-                <td id="9"></td>
+        <table align="center" id="userArea">
+            <tr class="newUser">
+                <td><button id="btnCreate">Create Game</button></td>
+                <td><button id="btnJoin">Join Game</button></td>
             </tr>
         </table>
+        <table class="gameArea" id="gameArea" align="center">
+            <tr>
+                <td id="00"></td>
+                <td id="01"></td>
+                <td id="02"></td>
+            </tr>
+            <tr>
+                <td id="10"></td>
+                <td id="11"></td>
+                <td id="12"></td>
+            </tr>
+            <tr>
+                <td id="20"></td>
+                <td id="21"></td>
+                <td id="22"></td>
+            </tr>
+        </table>
+        <p id="msg">Create or Join a game...</p>
+        <p id="btnReplay"><button>Replay</button></p>
     </div>
+    
     <script src="static/script.js"></script>
 </body>
 
